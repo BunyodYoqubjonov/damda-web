@@ -1,0 +1,19 @@
+.root {
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  .item {
+    flex: 1 0 50%;
+  }
+  .switch {
+    label {
+      margin: 0;
+    }
+  }
+}

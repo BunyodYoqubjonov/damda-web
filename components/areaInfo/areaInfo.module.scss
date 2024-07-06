@@ -1,0 +1,78 @@
+.root {
+  width: 100%;
+  padding-top: 80px;
+  @media (max-width: 900px) {
+    padding-top: 50px;
+  }
+  .link {
+    color: #f29f24;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  column-gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e465;
+  &.fullWidth {
+    width: 90%;
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+  .title {
+    flex-grow: 1;
+  }
+  .anchorText {
+    text-align: right;
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+    a {
+      color: #f29f24;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .destination {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .actions {
+    flex: 0 0 10%;
+    text-align: right;
+    .trashBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin: 0 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: #de2f2f;
+      cursor: pointer;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      @media (max-width: 900px) {
+        margin: 0 6px;
+      }
+    }
+  }
+}
+
+.mapIcon {
+  cursor: pointer;
+}

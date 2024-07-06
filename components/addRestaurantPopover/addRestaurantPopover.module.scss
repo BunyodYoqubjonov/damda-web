@@ -1,0 +1,62 @@
+.root {
+  width: 600px;
+  padding: 40px;
+  padding-top: 20px;
+  @media (max-width: 576px) {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  column-gap: 11px;
+  button {
+    width: 170px;
+    font-size: 20px;
+    line-height: 23px;
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e460;
+  .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'TT Commons', sans-serif;
+    color: #000;
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .radioWrapper {
+    display: flex;
+    column-gap: 30px;
+    @media (max-width: 576px) {
+      column-gap: 0;
+    }
+  }
+}

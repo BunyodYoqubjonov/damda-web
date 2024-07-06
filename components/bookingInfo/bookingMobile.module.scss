@@ -1,0 +1,87 @@
+.root {
+  width: 100%;
+  @media (max-width: 576px) {
+    margin-top: 50px;
+    padding: 16px;
+    border: 1px solid rgba(210, 210, 215, 0.61);
+    border-radius: 12px;
+  }
+}
+
+.aside {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  @media (max-width: 576px) {
+    margin-top: 0;
+    border-radius: 12px;
+  }
+}
+.priceSection {
+  margin-top: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  .rowItem {
+    .roomItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px 0;
+      .price {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  padding-top: 16px;
+  @media (max-width: 576px) {
+    padding-top: 8px;
+  }
+  .priceSection {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+
+    p {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .totalSection {
+    padding: 15px 0;
+    margin-top: 5px;
+    border-top: 1px solid #000;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .actions {
+    .row {
+      display: flex;
+      gap: 10px;
+
+      button {
+        margin: 10px 0;
+      }
+    }
+  }
+  @media (max-width: 380px) {
+    width: 100%;
+  }
+}

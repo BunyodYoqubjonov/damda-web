@@ -1,0 +1,32 @@
+.root {
+  position: sticky;
+  top: 16px;
+  left: 0;
+  .title {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 400;
+  }
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-top: 45px;
+  .listItem {
+    margin-bottom: 40px;
+    .item {
+      padding: 12px 0;
+      font-size: 28px;
+      line-height: 33px;
+      font-weight: 500;
+      color: #8b949f;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease-in-out;
+      &.active {
+        border-color: #000;
+        color: #000;
+      }
+    }
+  }
+}

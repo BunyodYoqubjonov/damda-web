@@ -1,0 +1,31 @@
+.root {
+  width: 100%;
+  padding-top: 80px;
+  @media (max-width: 900px) {
+    padding-top: 50px;
+  }
+}
+.outlinedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 15px 34px;
+  background: transparent;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: 'TT Commons', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    border-color: #f19204;
+  }
+  @media (max-width: 900px) {
+    border: 1px solid #d2d2d7;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

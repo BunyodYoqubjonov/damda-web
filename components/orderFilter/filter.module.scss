@@ -1,0 +1,49 @@
+.popover {
+  margin-top: 300px !important;
+  width: 100% !important;
+}
+
+.root {
+  border-radius: 50px;
+  z-index: 1;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+
+  .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0;
+  }
+
+  .close {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.body {
+  padding: 20px 15px;
+
+  .item {
+    margin-bottom: 8px;
+  }
+
+  .hidden {
+    width: 992px !important;
+    background: #fff;
+  }
+}

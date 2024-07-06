@@ -1,0 +1,175 @@
+.root {
+  width: 100%;
+  padding: 16px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  .brandLogo {
+    display: flex;
+    @media (max-width: 900px) {
+      svg {
+        width: 80px;
+      }
+    }
+  }
+  .logoWrapper {
+    @media (max-width: 900px) {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+  .menuIcon {
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    .textButton {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      transition: 0.2s ease-in-out;
+      svg {
+        margin-right: 8px;
+        transition: 0.2s ease-in-out;
+      }
+      &:hover {
+        color: #f19204;
+        svg {
+          fill: #f19204;
+        }
+      }
+      @media (max-width: 900px) {
+        margin-right: 16px;
+        span {
+          display: none;
+        }
+        svg {
+          width: 22px;
+          height: 22px;
+          margin-right: 0;
+        }
+      }
+    }
+    .outlinedButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      padding: 15px 34px;
+      background: transparent;
+      border: 1px solid #d2d2d7;
+      border-radius: 12px;
+      font-size: 18px;
+      font-family: 'TT Commons', sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        border-color: #f19204;
+      }
+      @media (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 8px;
+        background: transparent;
+        border: 1px solid #d2d2d7;
+        border-radius: 12px;
+        font-size: 15px;
+        font-family: 'TT Commons', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          border-color: #f19204;
+        }
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  width: 100%;
+  padding: 24px 0;
+  border-top: 1px solid #d2d2d765;
+  border-bottom: 1px solid #d2d2d765;
+  @media (max-width: 900px) {
+    display: none;
+  }
+  .active {
+    display: flex;
+    align-items: center;
+    margin-right: 50.83px;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+    color: #f19204;
+    .text {
+      display: block;
+    }
+    svg {
+      margin-right: 12px;
+      transition: 0.2s ease-in-out;
+      fill: #f19204;
+    }
+    &:hover {
+      color: #f19204;
+      svg {
+        fill: #f19204;
+      }
+    }
+  }
+  .navItem {
+    display: flex;
+    align-items: center;
+    margin-right: 50.83px;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+    .text {
+      display: block;
+    }
+    svg {
+      margin-right: 12px;
+      transition: 0.2s ease-in-out;
+    }
+    &:hover {
+      color: #f19204;
+      svg {
+        fill: #f19204;
+      }
+    }
+  }
+}
+.profileBtn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    width: 40px;
+    height: 40px;
+  }
+}

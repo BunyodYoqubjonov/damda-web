@@ -1,0 +1,62 @@
+.root {
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 30px 26px 30px 30px;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  .iconWrapper {
+    margin-bottom: 16px;
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #000;
+    }
+  }
+  .activeIcon {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &.active {
+    border-color: #f29f24;
+    .activeIcon {
+      opacity: 1;
+    }
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-top: 70px;
+  button {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    padding: 18px 40px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 20px;
+    button {
+      width: 100%;
+      height: 60px;
+    }
+  }
+}

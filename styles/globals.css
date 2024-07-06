@@ -1,0 +1,228 @@
+@import '../public/fonts/stylesheets.css';
+
+/* :root {
+  --ck-color-base-border: #000000 !important;
+} */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'TT Commons', sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+input,
+button {
+  padding: 0;
+  color: #000;
+}
+
+.disabled-date {
+  pointer-events: none;
+  cursor: default;
+  background: rebeccapurple;
+}
+
+.datepicker {
+  background: #fff;
+  width: 100%;
+}
+
+.datepicker .rdp-caption_label {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.datepicker .rdp-head_cell {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.datepicker .rdp-table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.datepicker .rdp-tbody {
+  border: 1px solid #00000010;
+  border-radius: 12px;
+}
+
+.datepicker .rdp-cell {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #00000010;
+  border-radius: 12px;
+}
+
+.datepicker .rdp-day {
+  width: 56px;
+  max-width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #00000010;
+}
+
+.datepicker .rdp-day:hover:not([aria-disabled='true']) {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.datepicker .rdp-day_selected:focus:not([aria-disabled='true']) {
+  border: 1px solid #000;
+}
+
+.datepicker .rdp-button:hover:not([aria-disabled='true']) {
+  background-color: #f192044f;
+}
+
+.datepicker .rdp-button:focus,
+.rdp-button:active {
+  border: 1px solid #000;
+  background-color: #f192044f;
+}
+
+.datepicker .rdp-day_selected:not([aria-disabled='true']),
+.rdp-day_selected:focus:not([aria-disabled='true']),
+.rdp-day_selected:active:not([aria-disabled='true']),
+.rdp-day_selected:hover:not([aria-disabled='true']) {
+  background-color: #f19204;
+}
+
+.datepicker .rdp-day_selected.rdp-button:hover {
+  background-color: #f19204;
+  border-color: #f19204;
+  color: #fff;
+}
+
+.datepicker .rdp-day_disabled {
+  background-color: #f2f2f2 !important;
+  border: none !important;
+  cursor: default;
+}
+.datepicker .rdp-day_disabled span {
+  opacity: 0.3;
+}
+.datepicker .rdp-day_disabled_half_bottom {
+  background: linear-gradient(to left top, #f2f2f2 50%, transparent 50%)
+    no-repeat;
+}
+.datepicker .rdp-day_disabled_half_top {
+  background: linear-gradient(to right bottom, #f2f2f2 50%, transparent 50%)
+    no-repeat;
+}
+.datepicker .half_day_text {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .datepicker .rdp-caption_label {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .datepicker .rdp-nav {
+    width: 30%;
+  }
+
+  .datepicker .rdp-head_cell {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .datepicker .rdp-table {
+    border-spacing: 6px;
+  }
+
+  .datepicker .rdp-tbody {
+    border-radius: 8px;
+  }
+
+  .datepicker .rdp-cell {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .datepicker .rdp-day {
+    width: 34px;
+    max-width: 34px;
+    font-size: 14px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .datepicker .half_day_text {
+    display: none;
+  }
+}
+
+.MuiContainer-root .MuiContainer-maxWidthLg .css-55lbhs-MuiContainer-root {
+  display: none;
+}
+
+.isCurrent {
+  color: black !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+@media (max-width: 768px) {
+  .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+    width: 100% !important;
+  }
+}
+
+.MuiSelect-select-center {
+  padding: 4px 0 0 0 !important;
+  background: white !important;
+}
+
+#nprogress .bar {
+  background: #f19204 !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #f19204, 0 0 5px #f19204;
+}
+
+.editor {
+  width: 100%;
+}
+.editor .ck .ck-content {
+  min-height: 170px !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+.editor .ck .ck-toolbar {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}

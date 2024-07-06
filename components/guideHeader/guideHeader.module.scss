@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  .outlinedButton {
+    margin-right: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .outlinedButton2 {
+    margin-right: 12px;
+    background: transparent;
+    border: 1px solid #d2d2d7;
+    cursor: pointer;
+  }
+}
+
+.mobileActions {
+  display: none;
+  @media (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    .search {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding: 12px 0 12px 20px;
+      border: 1px solid #d2d2d7;
+      border-radius: 12px;
+      width: 100%;
+
+      .input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'TT Commons', sans-serif;
+        color: #000;
+
+        &::placeholder {
+          color: #000;
+          opacity: 0.16;
+        }
+      }
+
+      .searchIcon {
+        background: transparent;
+        outline: none;
+        border: none;
+        padding: 0 17px;
+        border-left: 1px solid #d2d2d7;
+        cursor: pointer;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .outlinedButton {
+      width: 46px;
+      height: 46px;
+      padding: 13px;
+      background: transparent;
+      border: 1px solid #d2d2d7;
+      border-radius: 12px;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+
+      .iconWrapper {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.root {
+  position: sticky;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  margin-top: 58px;
+  @media (max-width: 900px) {
+    position: static;
+    margin-top: 50px;
+  }
+}
+
+.aside {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid rgba(210, 210, 215, 0.61);
+  border-radius: 15px;
+  @media (max-height: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .priceSection {
+    margin-top: 50px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+    @media (max-height: 768px) {
+      margin-top: 24px;
+      .row {
+        margin: 12px 0;
+      }
+    }
+  }
+  .totalSection {
+    padding: 22px 0;
+    margin-top: 8px;
+    border-top: 1px solid #000;
+    @media (max-height: 768px) {
+      padding-top: 4px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 990px) {
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h4 {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 26px 28px;
+    border-radius: 12px;
+    .priceSection {
+      margin-top: 40px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+  @media (max-width: 900px) {
+    margin: 15px 0;
+  }
+}
+.rowItem {
+  margin: 16px 0;
+  .roomItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    width: 100%;
+    .paragraph {
+      width: 100%;
+      margin: 0;
+    }
+    .price {
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin: 15px 0;
+  }
+}
+
+.actions {
+  width: 100%;
+  .row {
+    margin: 10px 0;
+    button:first-child {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

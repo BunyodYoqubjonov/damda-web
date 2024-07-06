@@ -1,0 +1,37 @@
+.container {
+  padding-top: 60px;
+  width: 75%;
+  @media (max-width: 576px) {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .space {
+    padding-top: 20px;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'TT Commons', sans-serif;
+    &:focus {
+      border-color: #000;
+    }
+    @media (max-width: 576px) {
+      padding: 16px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+    text-transform: lowercase;
+  }
+}

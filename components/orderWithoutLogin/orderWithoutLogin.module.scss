@@ -1,0 +1,84 @@
+.root {
+  width: 100%;
+  @media (max-width: 576px) {
+    margin-top: 56px;
+  }
+}
+.wrapper {
+  padding: 30px;
+  border: 1px solid #d2d2d7;
+  border-radius: 15px;
+}
+.inputWrapper {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  @media (max-width: 900px) {
+    padding: 8px 16px;
+  }
+  .label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'TT Commons', sans-serif;
+    color: #000;
+  }
+}
+.priceSection {
+  margin-top: 50px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #000;
+  @media (max-width: 900px) {
+    margin-top: 40px;
+  }
+}
+.totalSection {
+  padding: 22px 0;
+  margin-top: 8px;
+  border-top: 1px solid #000;
+  @media (max-width: 900px) {
+    .row {
+      margin: 0;
+    }
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.actions {
+  margin-top: 20px;
+}
+.infoWrapper {
+  width: 100%;
+  margin: 12px 0;
+  padding: 17px 54px 17px 30px;
+  border: 1px solid rgba(210, 210, 215, 0.61);
+  border-radius: 12px;
+  .text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  a {
+    color: #f29f24;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

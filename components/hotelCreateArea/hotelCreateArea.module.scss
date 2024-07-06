@@ -1,0 +1,46 @@
+.root {
+  width: 100%;
+  padding-top: 80px;
+  @media (max-width: 576px) {
+    padding-top: 50px;
+  }
+  .link {
+    color: #f29f24;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e465;
+  .title {
+    flex: 0 0 25%;
+  }
+  .anchorText {
+    flex-grow: 1;
+    text-align: right;
+    a {
+      color: #f29f24;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .destination {
+    flex: 0 0 20%;
+    text-align: right;
+  }
+}
+.tab {
+  text-transform: uppercase;
+}
+.tabLIst:first-child {
+  padding-left: 0;
+}

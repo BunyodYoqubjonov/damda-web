@@ -1,0 +1,29 @@
+.inputWrapper {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  .label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'TT Commons', sans-serif;
+    color: #000;
+    &::placeholder {
+      color: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+  &.error {
+    border-color: #de2f2f;
+  }
+}

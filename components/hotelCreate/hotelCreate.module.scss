@@ -1,0 +1,28 @@
+.root {
+  width: 100%;
+  padding-top: 30px;
+  @media (max-width: 576px) {
+    padding-top: 0;
+  }
+}
+
+.actions {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 60px;
+  @media (max-width: 576px) {
+    margin-top: 20px;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.languages {
+  float: right;
+  width: 25%;
+  .langSelect {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}

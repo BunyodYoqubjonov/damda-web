@@ -1,0 +1,123 @@
+.root {
+  width: 100%;
+  padding-top: 60px;
+  @media (max-width: 576px) {
+    padding-top: 50px;
+  }
+}
+.wrapper {
+  width: 75%;
+  margin-top: 20px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  border-bottom: 1px solid #d2d2d760;
+  @media (max-width: 576px) {
+    display: block;
+    padding: 8px 0;
+  }
+  .item {
+    flex: 0 0 50%;
+    padding: 16px 0;
+    @media (max-width: 576px) {
+      padding: 8px 0;
+    }
+    &:first-child {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 12px;
+      }
+    }
+    &:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #000;
+      font-size: 16px;
+      line-height: 19px;
+      font-family: 'TT Commons', sans-serif;
+      &.fullWidth {
+        width: 100%;
+      }
+      @media (max-width: 576px) {
+        background-color: #fff;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+    .textarea {
+      width: 350px;
+      padding: 14px 12px 23px 14px;
+      border: 1px solid #000000;
+      border-radius: 12px;
+      outline: none;
+      resize: none;
+      font-size: 16px;
+      line-height: 25px;
+      font-family: 'TT Commons', sans-serif;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.outlinedButton {
+  width: 100%;
+  min-height: 60px;
+  padding: 7px 12px;
+  background: transparent;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    .checkIn {
+      display: flex;
+      align-items: center;
+      grid-gap: 10px;
+      width: 100%;
+      min-height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      div {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        svg {
+          margin-left: 8px;
+        }
+      }
+      p {
+        width: fit-content;
+      }
+    }
+
+    .checkIn:last-child {
+      padding-left: 20px;
+      border-left: 1px solid #d2d2d7;
+    }
+  }
+}

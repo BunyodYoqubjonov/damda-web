@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+  height: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 44px;
+  padding: 20px 15px;
+  .closeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: none;
+    background: transparent;
+    outline: none;
+    .line {
+      display: block;
+      width: 36px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+  .brandLogo {
+    width: 82px;
+    height: 40px;
+    svg {
+      width: 82px;
+    }
+  }
+}
+.body {
+  flex-grow: 1;
+  margin-top: 3%;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      width: 100%;
+      border-bottom: 1px solid #d2d2d750;
+      &:last-child {
+        border-bottom: none;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 12px;
+        }
+        .text {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  .content {
+    padding-right: 85px;
+    p {
+      line-height: 24px;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    .link {
+      font-size: 16px;
+      line-height: 30px;
+      border-bottom: 1px solid #000;
+    }
+  }
+}

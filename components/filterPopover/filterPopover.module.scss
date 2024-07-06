@@ -1,0 +1,16 @@
+.root {
+  padding: 30px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 588px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  button:first-child {
+    margin-right: 10px;
+  }
+}
