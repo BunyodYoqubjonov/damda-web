@@ -49,6 +49,7 @@ export default function Sanatoriums({ data, error }) {
       .then((res) => {
         setList((prev) => [...prev, ...res.data])
         setLastPage(res.meta.last_page)
+        setPage(res?.meta?.current_page ?? page)
       })
       .finally(() => setLoadingBtn(false))
   }

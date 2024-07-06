@@ -45,8 +45,8 @@ export default function HotelsMap({ data, error, total }) {
       .get('/residences/paginate', { params })
       .then((res) => {
         setList((prev) => [...prev, ...res.data])
-        setPage(res.meta.current_page)
-        setLastPage(res.meta.last_page)
+        setPage(res?.meta?.current_page)
+        setLastPage(res?.meta?.last_page)
       })
       .finally(() => setLoading(false))
   }

@@ -50,6 +50,7 @@ export default function RecreationAreas({ data, error }) {
       .then((res) => {
         setList((prev) => [...prev, ...res.data])
         setLastPage(res.meta.last_page)
+        setPage(res?.meta?.current_page ?? page)
       })
       .finally(() => setLoadingBtn(false))
   }
@@ -75,8 +76,8 @@ export default function RecreationAreas({ data, error }) {
         setLastPage(res.meta.last_page)
       })
       .finally(() => setLoading(false))
-      setPage(page)
-      push({query: {cursor: page}}, undefined, {shallow: true})
+    setPage(page)
+    push({ query: { cursor: page } }, undefined, { shallow: true })
   }
 
   return (
@@ -120,7 +121,7 @@ export async function getServerSideProps({ locale, query }) {
     perPage: 10,
     lang: locale,
     type: 'zone',
-    page
+    page,
   }
 
   try {
