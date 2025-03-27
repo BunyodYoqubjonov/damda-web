@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <meta name="google-site-verification" content="RzkDD54I5H9pYKgAb6nlaLfJsPQyUSGOg1nB6zf5SyU" />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}
         </Head>
